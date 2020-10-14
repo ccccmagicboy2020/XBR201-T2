@@ -1,0 +1,278 @@
+{
+  "uuid": "ed9c415670251fdfdfa7912f01d1ad6a",
+  "path": "Offline/XBR201-T2",
+  "name": "XBR201-T2",
+  "content": "",
+  "created_at": "2020-10-14 09:39:39",
+  "updated_at": "2020-10-14 09:41:34",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "eedd38d392e034f891860e665f7b0a40",
+      "title": "XBR201-T2",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {},
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "47k",
+          4,
+          "R0402",
+          "R14,R6,R4,R5",
+          {
+            "puuid": "91a46775a6fd4360a886aa17ed9f1bcb",
+            "uuid": ""
+          }
+        ],
+        [
+          "100nF",
+          6,
+          "C0402",
+          "C20,C7,C16,C6,C10,C18",
+          {
+            "puuid": "560530b261504805a2a910903185dbfe",
+            "uuid": ""
+          }
+        ],
+        [
+          "1M",
+          1,
+          "R0402",
+          "R3",
+          {
+            "puuid": "91a46775a6fd4360a886aa17ed9f1bcb",
+            "uuid": ""
+          }
+        ],
+        [
+          "2k",
+          1,
+          "R0402",
+          "R2",
+          {
+            "puuid": "91a46775a6fd4360a886aa17ed9f1bcb",
+            "uuid": ""
+          }
+        ],
+        [
+          "4.7uF",
+          1,
+          "C0402",
+          "C1",
+          {
+            "puuid": "560530b261504805a2a910903185dbfe",
+            "uuid": ""
+          }
+        ],
+        [
+          "0.5pF",
+          1,
+          "C0402",
+          "C5",
+          {
+            "puuid": "560530b261504805a2a910903185dbfe",
+            "uuid": ""
+          }
+        ],
+        [
+          "1nF",
+          3,
+          "C0402",
+          "C4,C17,C15",
+          {
+            "puuid": "560530b261504805a2a910903185dbfe",
+            "uuid": ""
+          }
+        ],
+        [
+          "PH2.0-3P",
+          2,
+          "PH2.0-3P",
+          "P1,P4",
+          {
+            "puuid": "ea460472750f4044957957ec6ed0eb72",
+            "uuid": ""
+          }
+        ],
+        [
+          "ME6216A12M3G",
+          1,
+          "SOT-23",
+          "U6",
+          {
+            "puuid": "fd7939e5151445d6b732b6f93f6fea84",
+            "uuid": ""
+          }
+        ],
+        [
+          "10uF/16V",
+          1,
+          "C0603",
+          "C8",
+          {
+            "puuid": "3f35b341f41c49f7ae1b15f1f8dda2c9",
+            "uuid": ""
+          }
+        ],
+        [
+          "PT19-21C",
+          1,
+          "LED-0603",
+          "D1",
+          {
+            "puuid": "3b03ced5bff3458ba2c52f03c272643d",
+            "uuid": ""
+          }
+        ],
+        [
+          "5.1k",
+          2,
+          "R0402",
+          "R8,R10",
+          {
+            "puuid": "91a46775a6fd4360a886aa17ed9f1bcb",
+            "uuid": ""
+          }
+        ],
+        [
+          "10uF",
+          3,
+          "C0402",
+          "C12,C9,C2",
+          {
+            "puuid": "560530b261504805a2a910903185dbfe",
+            "uuid": ""
+          }
+        ],
+        [
+          "XBR816",
+          1,
+          "QFN24-1",
+          "U1",
+          {
+            "puuid": "86b17fccfbcf46349f54138a94139058",
+            "uuid": ""
+          }
+        ],
+        [
+          "12k",
+          3,
+          "R0402",
+          "R16,R12,R13",
+          {
+            "puuid": "91a46775a6fd4360a886aa17ed9f1bcb",
+            "uuid": ""
+          }
+        ],
+        [
+          "CSME0315D-100M-LRH",
+          1,
+          "PRS3015",
+          "L1",
+          {
+            "puuid": "683740a2cf764079a8a5ae254d500978",
+            "uuid": ""
+          }
+        ],
+        [
+          "200",
+          2,
+          "R0402",
+          "R17,R11",
+          {
+            "puuid": "91a46775a6fd4360a886aa17ed9f1bcb",
+            "uuid": ""
+          }
+        ],
+        [
+          "SY8120B1ABC",
+          1,
+          "SOT23-6",
+          "U2",
+          {
+            "puuid": "2f187849a3de47da8de953db19fec7c7",
+            "uuid": ""
+          }
+        ],
+        [
+          "NO",
+          1,
+          "PH2.0-6P",
+          "P3",
+          {
+            "puuid": "2f2adc338cf54b0f8110d4d993d80335",
+            "uuid": ""
+          }
+        ],
+        [
+          "22pF",
+          1,
+          "C0402",
+          "C3",
+          {
+            "puuid": "560530b261504805a2a910903185dbfe",
+            "uuid": ""
+          }
+        ],
+        [
+          "GD32F150G8U6",
+          1,
+          "QFN28",
+          "U4",
+          {
+            "puuid": "a19a927dd4534da39d7c3b1eb3c150d0",
+            "uuid": ""
+          }
+        ]
+      ],
+      "updateTime": 1602639579,
+      "createTime": 1602639579,
+      "histories": [],
+      "created_at": "2020-10-14 09:39:39",
+      "updated_at": "2020-10-14 09:39:39"
+    },
+    {
+      "uuid": "457e6f51fe768be277a44f6c388c05ae",
+      "puuid": "ed9c415670251fdfdfa7912f01d1ad6a",
+      "title": "XBR201-T2-PCB",
+      "filename": "XBR201-T2-PCB.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "291bb467cac840cead2ddf711f1b3758": 1,
+        "560530b261504805a2a910903185dbfe": 15,
+        "3f35b341f41c49f7ae1b15f1f8dda2c9": 1,
+        "2f187849a3de47da8de953db19fec7c7": 1,
+        "91a46775a6fd4360a886aa17ed9f1bcb": 13,
+        "683740a2cf764079a8a5ae254d500978": 1,
+        "86b17fccfbcf46349f54138a94139058": 1,
+        "3b03ced5bff3458ba2c52f03c272643d": 1,
+        "fd7939e5151445d6b732b6f93f6fea84": 1,
+        "ea460472750f4044957957ec6ed0eb72": 2,
+        "2f2adc338cf54b0f8110d4d993d80335": 1
+      },
+      "BOM": [],
+      "updateTime": 1602639694,
+      "createTime": 1602639637,
+      "histories": [],
+      "created_at": "2020-10-14 09:40:37",
+      "updated_at": "2020-10-14 09:41:34"
+    }
+  ],
+  "sort": [],
+  "title": "XBR201-T2",
+  "foldername": "XBR201-T2",
+  "schfilename": "XBR201-T2.json",
+  "schfilemtime": 1602639595104
+}
