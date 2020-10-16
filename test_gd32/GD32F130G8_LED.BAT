@@ -38,5 +38,6 @@ SET CPU_CLOCK=0x00B71B00
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\gd32f1x0_usart.__i"
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\gd32f1x0_wwdgt.__i"
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\led.__i"
+"d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\usart.__i"
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via ".\Objects\LED.lnp"
 "d:\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" ".\Objects\LED.axf" --i32combined --output ".\Objects\LED.hex"
