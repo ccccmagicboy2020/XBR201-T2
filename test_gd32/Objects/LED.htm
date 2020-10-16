@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\LED.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\LED.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Oct 16 09:27:11 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Oct 16 11:00:01 2020
 <BR><P>
 <H3>Maximum Stack Usage =         28 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -418,7 +418,7 @@ Global Symbols
 <P><STRONG><a name="[5]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f1x0_it.o(i.HardFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f1x0.o(RESET)
 </UL>
-<P><STRONG><a name="[52]"></a>LED_Init</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, led.o(i.LED_Init))
+<P><STRONG><a name="[52]"></a>LED_Init</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, led.o(i.LED_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = LED_Init &rArr; gpio_output_options_set
 </UL>
 <BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_output_options_set
@@ -482,7 +482,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
 </UL>
 
-<P><STRONG><a name="[4a]"></a>main</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[4a]"></a>main</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = main &rArr; LED_Init &rArr; gpio_output_options_set
 </UL>
 <BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
@@ -513,14 +513,14 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_config
 </UL>
 
-<P><STRONG><a name="[5b]"></a>system_clock_72m_hxtal</STRONG> (Thumb, 154 bytes, Stack size 0 bytes, system_gd32f1x0.o(i.system_clock_72m_hxtal))
+<P><STRONG><a name="[5b]"></a>system_clock_72m_irc8m</STRONG> (Thumb, 106 bytes, Stack size 0 bytes, system_gd32f1x0.o(i.system_clock_72m_irc8m))
 <BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
 </UL>
 
 <P><STRONG><a name="[58]"></a>system_clock_config</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_gd32f1x0.o(i.system_clock_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = system_clock_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_72m_hxtal
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_72m_irc8m
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
