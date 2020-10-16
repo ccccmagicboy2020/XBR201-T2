@@ -20,9 +20,13 @@
 
 /* 宏定义 --------------------------------------------------------------------*/
 /* 定义LED IO PORT与PIN */
-#define LED1_CLOCK			RCU_GPIOB
-#define	LED1_PORT				GPIOB
-#define LED1_PIN				GPIO_PIN_3
+// #define LED1_CLOCK			RCU_GPIOB
+// #define	LED1_PORT				GPIOB
+// #define LED1_PIN				GPIO_PIN_3
+
+#define LED1_CLOCK			RCU_GPIOA
+#define	LED1_PORT				GPIOA
+#define LED1_PIN				GPIO_PIN_7
 
 #define LED2_CLOCK			RCU_GPIOB
 #define	LED2_PORT				GPIOB
