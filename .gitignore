@@ -1,7 +1,11 @@
+*.__i
 *.bak
 *.o
 *.d
 *.crf
+*.dep
+*.axf
+*._ia
 
 # Prerequisites
 *.d
