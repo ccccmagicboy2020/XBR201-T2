@@ -21,8 +21,12 @@
 
 #include "led.h"
 #include "usart.h"
+#include "adc.h"
 #include <stdio.h>  //printf等
 
+
+uint16_t adc_value;
+float vol_value;
 
 /**
   * @函数名       main
@@ -35,10 +39,22 @@ int main(void)
 	systick_config();	//初始化滴答定时器
 	LED_Init();	//LED初始化
   USART0_Init();	//串口0初始化
+  ADC_Config();	//ADC初始化
 	
+	/* 软件触发使能 */
+	adc_software_trigger_enable(ADC_REGULAR_CHANNEL);
+
 	while(1)
 	{
-    printf("Hello World!\r\n");	//串口打印：Hello World!
+		adc_flag_clear(ADC_FLAG_EOC);	//清除EOC标志位
+		while(SET != adc_flag_get(ADC_FLAG_EOC));	//等待ADC转换完成
+		
+		adc_value = ADC_RDATA;	//读取ADC值
+		vol_value = (float)adc_value/4096 * 3.3;	//转换为电压值
+		
+		printf("the adc_value1 is %d\r\n", adc_value);	//打印ADC值
+		printf("the vol_valuel is %f\r\n", vol_value);	//打印电压值
+    
 		LED1_Toggle();	//对LED1的状态进行取反
 		delay_1ms(500);
 	}

@@ -1,7 +1,4 @@
 SET PATH=d:\Keil_v5\ARM\ARMCC\Bin;D:\IntelSWTools\compilers_and_libraries_2018.3.210\windows\mpi\intel64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\phosense\AppData\Local\Microsoft\WindowsApps;D:\MentorGraphics\PADSVX.2.5\SDD_HOME\CAMCAD;d:\cccc2020\TOOL\Git\bin\;d:\cccc2020\TOOL\OpenSSH-Win64\;d:\cccc2020\TOOL\VSCode-win32-x64-1.45.1\;
-SET ARMCC5_ASMOPT=--diag_suppress=9931
-SET ARMCC5_CCOPT=--diag_suppress=9931
-SET ARMCC5_LINKOPT=--diag_suppress=9931
 SET CPU_TYPE=GD32F130G8
 SET CPU_VENDOR=GigaDevice
 SET UV2_TARGET=GD32F130G8_LED
@@ -39,5 +36,6 @@ SET CPU_CLOCK=0x00B71B00
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\gd32f1x0_wwdgt.__i"
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\led.__i"
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\usart.__i"
+"d:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\adc.__i"
 "d:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via ".\Objects\LED.lnp"
 "d:\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" ".\Objects\LED.axf" --i32combined --output ".\Objects\LED.hex"
