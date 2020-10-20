@@ -21,6 +21,7 @@
 #include "led.h"
 #include "usart.h"
 #include "adc.h"
+#include "dac.h"
 #include <stdio.h> //printf等
 
 uint16_t adc_value[2];
@@ -41,6 +42,7 @@ int main(void)
   USART0_Init();    //串口0初始化
   ADC_Config();     //ADC初始化
   ADC_DMA_Config(); //ADC的DMA配置初始化
+  DAC_Config();     //DAC的初始化
 
   MCUid = Get_JTAG_ID(); //启动芯片之前判断芯片
   printf("mcu id is: 0x%04x\r\n", MCUid);
@@ -61,6 +63,7 @@ int main(void)
       printf("the vol_valuel[%d] is %f\r\n", i, vol_value[i]); //
     }
 
+    DAC_voltage_output(1.2);
     LED1_Toggle(); //对LED1的状态进行取反
     delay_1ms(1000);
   }
