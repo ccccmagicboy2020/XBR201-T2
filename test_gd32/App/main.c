@@ -22,11 +22,19 @@
 #include "usart.h"
 #include "adc.h"
 #include "dac.h"
+#include "timer2.h"
 #include <stdio.h> //printf等
 
 uint16_t adc_value[2];
 float vol_value[2];
 uint16_t Get_JTAG_ID(void);
+
+void nvic_configuration(void)
+{
+    nvic_priority_group_set(NVIC_PRIGROUP_PRE1_SUB3);
+    nvic_irq_enable(TIMER2_IRQn, 1, 1);
+}
+
 /**
   * @函数名       main
   * @功  能       主函数入口
@@ -43,6 +51,8 @@ int main(void)
   ADC_Config();     //ADC初始化
   ADC_DMA_Config(); //ADC的DMA配置初始化
   DAC_Config();     //DAC的初始化
+	nvic_configuration();	//中断控制器初始化
+	timer_configuration();	//计时器2初始化
 
   MCUid = Get_JTAG_ID(); //启动芯片之前判断芯片
   printf("mcu id is: 0x%04x\r\n", MCUid);
@@ -51,21 +61,18 @@ int main(void)
   {
     char i;
 
-    adc_software_trigger_enable(ADC_REGULAR_CHANNEL);
-    while (RESET == dma_flag_get(DMA_CH0, DMA_FLAG_FTF))
-      ;
-
     for (i = 0; i < 2; i++)
     {
+			while (RESET == dma_flag_get(DMA_CH0, DMA_FLAG_FTF));
       vol_value[i] = (float)adc_value[i] / 4096 * 3.3; //
 
-      printf("the adc_value1[%d] is %d\r\n", i, adc_value[i]); //
+      //printf("the adc_value1[%d] is %d\r\n", i, adc_value[i]); //
       printf("the vol_valuel[%d] is %f\r\n", i, vol_value[i]); //
     }
 
     DAC_voltage_output(1.2);
-    LED1_Toggle(); //对LED1的状态进行取反
-    delay_1ms(1000);
+
+    delay_1ms(100);
   }
 }
 

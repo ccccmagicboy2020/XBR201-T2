@@ -14,6 +14,7 @@
 
 #include "gd32f1x0_it.h"
 #include "systick.h"
+#include "led.h"
 
 /*!
     \brief      this function handles NMI exception
@@ -113,3 +114,20 @@ void SysTick_Handler(void)
 {
     delay_decrement();
 }
+
+/**
+  * @brief  This function handles TIMER2 interrupt request.
+  * @param  None
+  * @retval None
+  */
+void TIMER2_IRQHandler(void)
+{
+	//
+	timer_interrupt_flag_clear(TIMER2,TIMER_INT_FLAG_CH0);
+	adc_software_trigger_enable(ADC_REGULAR_CHANNEL);
+	//
+	//
+	LED1_Toggle(); //对LED1的状态进行取反
+}
+
+

@@ -38,8 +38,8 @@ void ADC_Config(void)
 	adc_channel_length_config(ADC_REGULAR_CHANNEL, 2);
 
 	/* ADC 规则通道配置：规则组0、ADC通道8、采样时间55.5ADC时钟周期、使能规则通道 */
-	adc_regular_channel_config(0, LIGHT_ADC_CHANNEL, ADC_SAMPLETIME_55POINT5);
-	adc_regular_channel_config(1, IF_ADC_CHANNEL, ADC_SAMPLETIME_55POINT5); //越小越快
+	adc_regular_channel_config(0, LIGHT_ADC_CHANNEL, ADC_SAMPLETIME_1POINT5);
+	adc_regular_channel_config(1, IF_ADC_CHANNEL, ADC_SAMPLETIME_1POINT5); //越小越快
 
 	adc_external_trigger_config(ADC_REGULAR_CHANNEL, ENABLE);
 

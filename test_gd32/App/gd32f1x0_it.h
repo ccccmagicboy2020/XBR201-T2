@@ -36,5 +36,9 @@ void DebugMon_Handler(void);
 void PendSV_Handler(void);
 /* SysTick handle function */
 void SysTick_Handler(void);
+/* TIMER2 handle function */
+void TIMER2_IRQHandler(void);
+
+
 
 #endif /* GD32F1X0_IT_H */
